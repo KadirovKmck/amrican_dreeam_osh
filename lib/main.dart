@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 void main(List<String> args) {
   runApp(American());
 }
+
 class American extends StatelessWidget {
   const American({super.key});
 

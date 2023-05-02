@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class AmericanDreamOshh extends StatefulWidget {
-  const AmericanDreamOshh({super.key});
+class MyWidget extends StatefulWidget {
+  const MyWidget({super.key});
 
   @override
-  State<AmericanDreamOshh> createState() => _AmericandreamOshhState();
+  State<MyWidget> createState() => _MyWidgetState();
 }
 
-class _AmericandreamOshhState extends State<AmericanDreamOshh> {
+class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

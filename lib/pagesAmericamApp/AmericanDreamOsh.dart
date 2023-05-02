@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import 'americanDreamOsh1.dart';
+
 class AmericanDreamOsh extends StatefulWidget {
   const AmericanDreamOsh({super.key});
 
@@ -119,10 +121,8 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
                 color: Color(0xff36B8B8)),
             child: TextButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => AmericanDreamOsh()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyWidget()));
               },
               child: Text(
                 'Register',
@@ -142,10 +142,8 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => AmericanDreamOsh()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyWidget()));
                 },
                 child: Text(
                   'Log in',
