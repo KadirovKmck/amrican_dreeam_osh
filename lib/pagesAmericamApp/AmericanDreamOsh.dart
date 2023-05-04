@@ -1,10 +1,12 @@
 import 'dart:html';
 
+import 'package:amrican_dreeam_osh/constant/constants.dart';
+import 'package:amrican_dreeam_osh/pagesAmericamApp/verification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import 'americanDreamOsh1.dart';
+import 'SINGIN.dart';
 
 class AmericanDreamOsh extends StatefulWidget {
   const AmericanDreamOsh({super.key});
@@ -37,7 +39,7 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
               color: Color(0xff36B8B8),
             ),
             height: 200,
-            width: 460,
+            width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -96,7 +98,13 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
                   ),
                   Padding(
                     padding: EdgeInsets.all(10),
-                    child: TextField(
+                    child: TextFormField(
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'Please enter some text';
+                        }
+                        return null;
+                      },
                       keyboardType: TextInputType.number,
                       obscureText: false,
                       decoration: InputDecoration(
@@ -122,7 +130,7 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
             child: TextButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MyWidget()));
+                    MaterialPageRoute(builder: (context) => Veritification()));
               },
               child: Text(
                 'Register',
@@ -143,11 +151,11 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
               TextButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyWidget()));
+                      MaterialPageRoute(builder: (context) => singin()));
                 },
                 child: Text(
                   'Log in',
-                  style: TextStyle(fontSize: 18, color: Color(0xff36B8B8)),
+                  style: TextStyle(fontSize: 18, color: cActive),
                 ),
               ),
             ],
