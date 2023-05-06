@@ -1,4 +1,5 @@
 import 'package:amrican_dreeam_osh/pagesAmericamApp/AmericanDreamOsh.dart';
+import 'package:amrican_dreeam_osh/pagesAmericamApp/Wellcom.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -12,7 +13,7 @@ class American extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AmericanDreamOsh(),
+      home: ZadachaApp(),
     );
   }
 }

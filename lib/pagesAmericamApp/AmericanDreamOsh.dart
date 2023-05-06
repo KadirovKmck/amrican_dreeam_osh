@@ -99,14 +99,7 @@ class _AmericanDreamOshState extends State<AmericanDreamOsh> {
                   Padding(
                     padding: EdgeInsets.all(10),
                     child: TextFormField(
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter some text';
-                        }
-                        return null;
-                      },
-                      keyboardType: TextInputType.number,
-                      obscureText: false,
+                                            obscureText: false,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: 'Mobile',
