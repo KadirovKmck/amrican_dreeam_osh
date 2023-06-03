@@ -1,4 +1,3 @@
-import 'package:amrican_dreeam_osh/pagesAmericamApp/AmericanDreamOsh.dart';
 import 'package:amrican_dreeam_osh/pagesAmericamApp/Wellcom.dart';
 import 'package:flutter/material.dart';
 
